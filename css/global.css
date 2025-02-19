@@ -1,45 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Root variables */
+:root {
+  --primary-color: #F5AF4E;
+  --secondary-color: #6D0796;
+  --accent-color-light: #F2E6D4;
+  --accent-color-dark: #371E16;
+  --font-family: 'Arial', sans-serif;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  line-height: 1.4;
+}
+
+/* Locally hosted fonts */
+@font-face {
+  font-family: '';
+    src: url('/assets/fonts/GreatVibes-Regular.woff2') format('woff2'),
+         url('/assets/fonts/GreatVibes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Text styling */
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+/* Header styling */
+
   
 .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background: rgb(206, 145, 249);
-    width: 100%;
-    text-align: center;
-    transition: 0.5s;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-    z-index: 99;
+  position: fixed;
+  left: -100%;
+  top: 5rem;
+  flex-direction: column;
+  background: rgb(206, 145, 249);
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
   
 .nav-menu.active {
-    left: 0;
+  left: 0;
 }
   
 .nav-item {
-    margin: 2.5rem 0;
+  margin: 2.5rem 0;
 }
   
 .nav-logo img {
-    width: 35%;
+  width: 35%;
 }
   
 .hamburger {
-    display: block;
-    cursor: pointer;
+  display: block;
+  cursor: pointer;
 }
   
 .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
   
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
   
 .hamburger.active .bar:nth-child(3) {

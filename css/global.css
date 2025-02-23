@@ -106,8 +106,8 @@ h3 {
 .bar {
     display: block;
     width: 30px;
-    height: 4px;
-    background-color: white;
+    height: 5px;
+    background-color: var(--secondary-color);
     transition: var(--transition-speed);
 }
   
@@ -139,7 +139,7 @@ h3 {
   
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: flex;
   }
 
   .nav-links {
@@ -148,17 +148,31 @@ h3 {
     position: absolute;
     top: 70px;
     right: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     width: 100%;
     text-align: center;
     padding: 20px 0;
   }
 
-.nav-links.active {
+  .nav-links.active {
     display: flex;
   }
 
-.nav-links li {
+  .nav-links li {
     padding: 10px 0;
   }
+
+  /* Hamburger menu animation */
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+  }
+
 }

@@ -147,7 +147,7 @@ h3 {
 }
 
 .facebook-icon:hover {
-    background-image: url();
+    background-image: url(/assets/images/facebook-logo-color.svg);
     transform: scale(1.2);
 }
 
@@ -156,7 +156,7 @@ h3 {
 }
   
 .twitter-icon:hover {
-  background-image: url();
+  background-image: url(/assets/images/x-logo-color.svg);
   transform: scale(1.2);
 }
 
@@ -164,8 +164,8 @@ h3 {
     background-image: url(/assets/images/instagram-logo.svg);
 }
   
-.facebook-icon:hover {
-  background-image: url();
+.instagram-icon:hover {
+  background-image: url(/assets/images/instagram-logo-color.svg);
   transform: scale(1.2);
 }
   

@@ -22,9 +22,9 @@ body {
 
 /* Locally hosted fonts */
 @font-face {
-  font-family: '';
-    src: url('/assets/fonts/GreatVibes-Regular.woff2') format('woff2'),
-         url('/assets/fonts/GreatVibes-Regular.woff') format('woff');
+  font-family: 'Satisfy';
+    src: url('/assets/fonts/Satisfy-Regular.woff2') format('woff2'),
+         url('/assets/fonts/Satisfy-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -87,7 +87,8 @@ h3 {
 .nav-links li a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-family: 'Satisfy';
   transition: var(--transition-speed);
 }
 

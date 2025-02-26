@@ -88,7 +88,7 @@ h3 {
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 2rem;
-  font-family: 'Satisfy';
+  font-family: 'Satisfy', serif;
   transition: var(--transition-speed);
 }
 
@@ -111,38 +111,79 @@ h3 {
 }
 
 .bar {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background-color: var(--secondary-color);
-    border-radius: 5px;
-    transition: var(--transition-speed) ease-in-out;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  transition: var(--transition-speed) ease-in-out;
 }
   
 /* Footer styling */
 .footer {
-    grid-area: footer;
-    text-align: center;
-    background: #6d0796;
-    border-radius: 10px 10px 0 0;
-    padding-top: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding-top: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  transition: background-image 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.facebook-icon {
+  background-image: url(/assets/images/facebook-logo.svg);
+}
+
+.facebook-icon:hover {
+    background-image: url();
+    transform: scale(1.2);
+}
+
+.twitter-icon {
+    background-image: url(/assets/images/x-logo.svg);
+}
+  
+.twitter-icon:hover {
+  background-image: url();
+  transform: scale(1.2);
+}
+
+.instagram-icon {
+    background-image: url(/assets/images/instagram-logo.svg);
+}
+  
+.facebook-icon:hover {
+  background-image: url();
+  transform: scale(1.2);
 }
   
 .created {
-    color: white;
-    font-family: 'Shadows Into Light Two', cursive;
-    letter-spacing: 1.3px;
-    padding-top: 5px;
+  color: white;
+  font-family: 'Shadows Into Light Two', cursive;
+  letter-spacing: 1.3px;
+  padding-top: 5px;
 }
   
 .created a:link, a:visited {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
   
 .created a:hover, a:active {
-    background-color: #6d0796;
-    color: white;
+  background-color: #6d0796;
+  color: white;
 }
 
 @media (max-width: 1024px) {

@@ -27,11 +27,12 @@
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px #FFFFFF;
+    margin: 30px;
 }
 
 .blog-post h2 {
     font-size: 2rem;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .blog-post a {
@@ -42,6 +43,38 @@
     color: #FFFFFF;
     font-size: 1.3rem;
     line-height: 1.5;
+    text-align: left;
+    padding: 10px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-section {
+    flex: 2;
+    margin-left: 30px;
+    max-width: 70%;
+}
+
+.about-section h2 {
+    margin: 20px 0;
+}
+
+.az-flag {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.az-flag img {
+    width: 100%;
+    max-width: 200px;
 }
 
 /* Responsive layout */

@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .blog-post {
@@ -19,7 +19,7 @@
 }
 
 .blog-post:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .blog-post img {
@@ -42,9 +42,9 @@
 .blog-post p {
     color: #FFFFFF;
     font-size: 1.3rem;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: left;
-    padding: 10px;
+    padding: 15px;
 }
 
 .about-container {
@@ -56,13 +56,17 @@
 }
 
 .about-section {
-    flex: 2;
-    margin-left: 30px;
+    flex: 3;
+    margin-left: 50px;
     max-width: 70%;
 }
 
 .about-section h2 {
     margin: 20px 0;
+}
+
+.about-section p {
+    font-size: 1.3rem;
 }
 
 .az-flag {

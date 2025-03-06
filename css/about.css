@@ -1,3 +1,7 @@
+.nav-links li a:hover {
+    color: #FFFFFF;
+}
+
 .mainAbout {
     margin-top: 200px;
     text-align: center;

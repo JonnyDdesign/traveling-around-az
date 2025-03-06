@@ -1,0 +1,58 @@
+.main-blog-header {
+    margin-top: 200px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    width: 425px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.card p {
+    font-size: 1.2rem;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.card .date {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}

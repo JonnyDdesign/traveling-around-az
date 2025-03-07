@@ -33,8 +33,11 @@
 }
 
 .blog-post {
+    position: relative;
     flex: 1 1 calc(50% - 20px);
+    width: 100%;
     max-width: 600px;
+    overflow: hidden;
     background-color: var(--secondary-color);
     border-radius: 8px;
     padding: 15px;
@@ -47,17 +50,36 @@
     transform: translateY(-8px);
 }
 
+.blog-link {
+    display: block;
+    position: relative;
+}
+
 .blog-post img {
-    width: 80%;
+    display: block;
+    width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px #FFFFFF;
     margin: 30px;
 }
 
 .blog-post h2 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
     font-size: 2rem;
-    margin: 10px 0;
+    transition: background 0.3s ease;
+}
+
+.blog-post h2:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .blog-post a {
@@ -71,6 +93,25 @@
     text-align: left;
     padding: 15px;
 }
+
+.all-posts-button a {
+    font-family: 'Shadows Into Light Two';
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid #FFFFFF;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+.all-posts-button a:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+  }
 
 .about-container {
     display: flex;

@@ -1,0 +1,9 @@
+.nav-links li a:hover {
+    color: #FFFFFF;
+}
+
+.main-hidden-hiking-trails-header {
+    margin-top: 200px;
+    text-align: center;
+    padding-bottom: 50px;
+}

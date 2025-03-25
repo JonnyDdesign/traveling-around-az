@@ -1,3 +1,74 @@
 .nav-links li a:hover {
     color: #FFFFFF;
 }
+
+.main-blissful-bisbee-header {
+    margin-top: 200px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.blissful-bisbee-intro img {
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+}
+
+.blissful-bisbee-intro p {
+    font-size: 1.3rem;
+    margin: 0 100px;
+}
+
+.blissful-bisbee-intro img {
+    border-radius: 8px;
+}
+
+.bisbee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.blissful-bisbee-post {
+    width: 70%;
+    background: var(--primary-color);
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+.blissful-bisbee-post h2 {
+    text-align: center;
+}
+
+.blissful-bisbee-post p {
+    font-size: 1.3rem;
+}
+
+.blissful-bisbee-post img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.footer-image {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hidden-hiking-post {
+      flex: 1 1 100%; /* Stacks posts in one column */
+    }
+}

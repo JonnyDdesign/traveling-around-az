@@ -5,17 +5,22 @@
 .main-hidden-hiking-trails-header {
     margin-top: 200px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .hidden-hiking-intro img {
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
     width: 40%;
 }
 
 .hidden-hiking-intro p {
+    font-size: 1.3rem;
     margin: 0 100px;
+}
+
+.hidden-hiking-intro img {
+    border-radius: 8px;
 }
 
 .hiking-container {
@@ -29,9 +34,16 @@
 .hidden-hiking-post {
     width: 70%;
     background: var(--primary-color);
-    padding: 15px;
     border-radius: 8px;
     margin: 10px auto;
+}
+
+.hidden-hiking-post h2 {
+    text-align: center;
+}
+
+.hidden-hiking-post p {
+    font-size: 1.3rem;
 }
 
 .hidden-hiking-post img {
@@ -40,7 +52,20 @@
     height: auto;
     display: block;
     margin: 10px auto;
-  }
+    border-radius: 8px;
+}
+
+.footer-image {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 @media (max-width: 768px) {
     .hidden-hiking-post {

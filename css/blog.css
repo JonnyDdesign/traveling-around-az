@@ -60,3 +60,10 @@
     color: var(--primary-color);
     margin-bottom: 10px;
 }
+
+/* Responsive layouts */
+@media (max-width: 768px) {
+    .main-blog-header h1 {
+        font-size: 3rem;
+    }
+}

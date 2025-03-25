@@ -12,15 +12,12 @@
     display: block;
     margin: 20px auto;
     width: 40%;
+    border-radius: 8px;
 }
 
 .blissful-bisbee-intro p {
     font-size: 1.3rem;
     margin: 0 100px;
-}
-
-.blissful-bisbee-intro img {
-    border-radius: 8px;
 }
 
 .bisbee-container {
@@ -68,7 +65,34 @@
 }
 
 @media (max-width: 768px) {
-    .hidden-hiking-post {
+    .main-blissful-bisbee-header {
+        margin-top: 150px;
+    }
+
+    .main-blissful-bisbee-header h1 {
+        font-size: 3rem;
+    }
+
+    .blissful-bisbee-intro img {
+        display: block;
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    .blissful-bisbee-intro p {
+        font-size: 1rem;
+        margin: 0 20px;
+    }
+
+    .blissful-bisbee-post {
       flex: 1 1 100%; /* Stacks posts in one column */
+    }
+
+    .blissful-bisbee-post h2 {
+        font-size: 2.5rem;
+    }
+
+    .blissful-bisbee-post p {
+        font-size: 1rem;
     }
 }

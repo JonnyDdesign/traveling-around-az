@@ -160,9 +160,34 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive layout */
+/* Responsive layouts */
+@media (max-width: 1024px) {
+    .about-container {
+        margin-left: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .blog-post {
         flex: 1 1 100%;
+    }
+
+    .about-container {
+        flex: auto;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .about-container h2 {
+        text-align: center;
+    }
+
+    .about-container p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .az-flag img {
+        max-width: 200px;
     }
   }

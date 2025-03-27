@@ -67,3 +67,17 @@
         font-size: 3rem;
     }
 }
+
+@media (max-width: 425px) {
+    .card {
+        width: 325px;
+    }
+
+    .card img {
+        height: 225px;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}

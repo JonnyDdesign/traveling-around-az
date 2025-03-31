@@ -1,8 +1,7 @@
 .latest-posts {
     position: relative;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding: 30px 0;
 }
 
 .latest-posts::after {
@@ -162,14 +161,59 @@
 
 /* Responsive layouts */
 @media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3.8rem;
+        font-family: 'Special Elite', serif;
+        letter-spacing: 4px;
+        display: inline-block;
+        margin-top: 375px;
+    }
+
+    .hero-content a {
+        font-size: 1.5rem;
+    }
+
+    .latest-posts-p {
+        font-size: 2.8rem;
+    }
+
+    .latest-posts::after {
+        width: 25%;
+    }
+
+    .all-posts-button a {
+        font-size: 1.5rem;
+    }
+
     .about-container {
         margin-left: 20px;
     }
 }
 
 @media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3.3rem;
+        margin-top: 350px;
+    }
+
+    .hero-content a {
+        font-size: 1.3rem;
+    }
+
+    .latest-posts-p {
+        font-size: 2.5rem;
+    }
+
+    .latest-posts::after {
+        width: 30%;
+    }
+
     .blog-post {
         flex: 1 1 100%;
+    }
+
+    .all-posts-button a {
+        font-size: 1.3rem;
     }
 
     .about-container {
@@ -190,4 +234,20 @@
     .az-flag img {
         max-width: 200px;
     }
-  }
+}
+
+@media (max-width: 425px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+        letter-spacing: 4px;
+        margin-top: 325px;
+    }
+
+    .latest-posts-p {
+        font-size: 2rem;
+    }
+
+    .latest-posts::after {
+        width: 35%;
+    }
+}

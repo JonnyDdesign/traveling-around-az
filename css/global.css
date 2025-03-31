@@ -151,11 +151,11 @@ h3 {
 }
 
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: 4.8rem;
   font-family: 'Special Elite', serif;
   letter-spacing: 4px;
   display: inline-block;
-  margin-top: 450px;
+  margin-top: 425px;
 }
 
 .hero-content p {
@@ -284,6 +284,7 @@ h3 {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    z-index: 3;
   }
 
   .nav-links li {
@@ -337,9 +338,6 @@ h3 {
 
   .hero-content p {
     font-size: 1.4rem;
-  }
-
-  .hero-content a {
-    margin-top: 40px;
+    padding: 0 20px;
   }
 }

@@ -1,0 +1,98 @@
+.nav-links li a:hover {
+    color: #FFFFFF;
+}
+
+.main-tucson-treats-header {
+    margin-top: 200px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.tucson-treats-intro img {
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+    border-radius: 8px;
+}
+
+.tucson-treats-intro p {
+    font-size: 1.3rem;
+    margin: 0 100px;
+}
+
+.tucson-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tucson-treats-post {
+    width: 70%;
+    background: var(--primary-color);
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+.tucson-treats-post h2 {
+    text-align: center;
+}
+
+.tucson-treats-post p {
+    font-size: 1.3rem;
+}
+
+.tucson-treats-post img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.footer-image {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .main-tucson-treats-header {
+        margin-top: 150px;
+    }
+
+    .main-tucson-treats-header h1 {
+        font-size: 3rem;
+    }
+
+    .tucson-treats-intro img {
+        display: block;
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    .tucson-treats-intro p {
+        font-size: 1rem;
+        margin: 0 20px;
+    }
+
+    .tucson-treats-post {
+      flex: 1 1 100%; /* Stacks posts in one column */
+    }
+
+    .tucson-treats-post h2 {
+        font-size: 2.5rem;
+    }
+
+    .tucson-treats-post p {
+        font-size: 1rem;
+    }
+}

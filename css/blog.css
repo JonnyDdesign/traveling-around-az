@@ -12,11 +12,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 60px;
 }
 
 .card {
-    width: 425px;
+    width: 450px;
     background-color: var(--secondary-color);
     border-radius: 8px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);

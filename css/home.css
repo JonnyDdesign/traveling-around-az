@@ -27,14 +27,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
     padding: 40px 20px;
 }
 
 .blog-post {
     position: relative;
-    flex: 1 1 calc(50% - 20px);
-    max-width: 500px;
+    max-width: 550px;
     overflow: hidden;
     background-color: var(--secondary-color);
     border-radius: 8px;
@@ -116,7 +115,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     padding: 40px 20px;
     margin: 0 auto;
 }
@@ -181,6 +180,14 @@
         width: 25%;
     }
 
+    .blog-list {
+        gap: 80px;
+    }
+
+    .blog-post {
+        max-width: 650px;
+    }
+
     .all-posts-button a {
         font-size: 1.5rem;
     }
@@ -192,7 +199,7 @@
 
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 3.3rem;
+        font-size: 3.2rem;
         margin-top: 350px;
     }
 
@@ -210,6 +217,10 @@
 
     .blog-post {
         flex: 1 1 100%;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
     }
 
     .all-posts-button a {
@@ -236,9 +247,9 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 435px) {
     .hero-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.7rem;
         letter-spacing: 4px;
         margin-top: 325px;
     }
@@ -249,5 +260,17 @@
 
     .latest-posts::after {
         width: 35%;
+    }
+
+    .blog-list {
+        gap: 50px;
+    }
+
+    .blog-post h2 {
+        font-size: 1.3rem;
+    }
+
+    .az-flag img {
+        max-width: 170px;
     }
 }

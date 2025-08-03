@@ -3,7 +3,7 @@
 }
 
 .main-contact-header {
-    margin-top: 200px;
+    margin-top: 180px;
     text-align: center;
     padding-bottom: 50px;
 }
@@ -12,7 +12,7 @@ form {
     background: #6d0796;
     display: flex;
     flex-direction: column;
-    padding: 3vw 4vw;
+    padding: 2rem 3rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
@@ -49,4 +49,23 @@ form input, form textarea {
 .button:hover {
     background-color: #f5af4e;
     color: white;
+}
+
+@media (max-width: 435px) {
+    .main-contact-header {
+        margin-top: 150px;
+    }
+
+    form {
+        padding: 1rem 1.5rem;
+        width: 80%;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+    }
+
+    .button {
+        width: 150px;
+    }
 }

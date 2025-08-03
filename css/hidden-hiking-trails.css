@@ -72,3 +72,31 @@
       flex: 1 1 100%; /* Stacks posts in one column */
     }
 }
+
+@media (max-width: 435px) {
+    .main-hidden-hiking-trails-header {
+        margin-top: 150px;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    .hidden-hiking-intro img {
+        width: 80%;
+    }
+
+    .hidden-hiking-intro p {
+        font-size: 1.1rem;
+        margin: 0 40px;
+    }
+
+    .hidden-hiking-post h2 {
+        font-size: 2.5rem;
+    }
+
+    .hidden-hiking-post p {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}

@@ -118,7 +118,7 @@ h3 {
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 2rem;
-  font-family: 'Satisfy', serif;
+  font-family: 'Satisfy', cursive;
   transition: var(--transition-speed);
 }
 

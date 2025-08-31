@@ -108,7 +108,16 @@
     </div>
     <div class="blog-post four">
       <a href="long-way-around.html" class="blog-link">
-        <img src="assets/images/scenic-az-road.webp" alt="scenic road winding through Arizona">
+        <img 
+          src="assets/images/scenic-az-road-800.webp"
+          srcset="
+            assets/images/scenic-az-road-400.webp 400w,
+            assets/images/scenic-az-road-600.webp 600w,
+            assets/images/scenic-az-road-800.webp 800w
+          "
+          sizes="(max-width: 600px) 100vw, 50vw"
+          alt="scenic road winding through Arizona"
+          loading="lazy">
         <h2>Take the Long Way Around</h2>
       </a>
     </div>

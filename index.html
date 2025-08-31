@@ -78,7 +78,16 @@
     </div>
     <div class="blog-post two">
       <a href="blissful-bisbee.html" class="blog-link">
-        <img src="assets/images/Bisbee.webp" alt="scenic view of Bisbee, Arizona">
+        <img 
+          src="assets/images/bisbee-800.webp" 
+          srcset="
+            assets/images/bisbee-400.webp 400w,
+            assets/images/bisbee-600.webp 600w,
+            assets/images/bisbee-800.webp 800w
+          "
+          sizes="(max-width: 600px) 100vw, 50vw"
+          alt="scenic view of Bisbee, Arizona"
+          loading="lazy">
         <h2>Blissful Day in Bisbee</h2>
       </a>
     </div>

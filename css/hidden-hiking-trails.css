@@ -67,6 +67,7 @@
     display: block;
 }
 
+/* Responsive Styling */
 @media (max-width: 768px) {
     .hidden-hiking-post {
       flex: 1 1 100%; /* Stacks posts in one column */

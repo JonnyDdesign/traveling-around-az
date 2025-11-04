@@ -3,159 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the diverse beauty, magical landscapers, and culinary delights of Arizona through this travel blog. Discover the best places to visit, eat, and explore in and around Arizona. Plan your next adventure with this comprehensive az travel guide.">
-  <meta name="keywords" content="Arizona travel, Arizona road trips, best places in Arizona, Grand Canyon, Sedona hikes, Phoenix attractions, Tucson food, Arizona adventure">
+
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Traveling Around AZ highlights the best Arizona destinations, hidden gems, and road trips across the state. Discover scenic spots, local eats, and off-the-beaten-path adventures in the heart of the desert.">
   <meta name="author" content="Traveling Around AZ">
   <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Discover Arizona’s Hidden Gems | Traveling Around AZ">
-  <meta property="og:description" content="Explore the beauty of Arizona with expert travel guides, top destinations, and insider tips for your next adventure.">
+  <meta property="og:description" content="Explore Arizona’s natural beauty, scenic drives, and unique attractions with Traveling Around AZ, your ultimate guide to exploring the Grand Canyon State.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.travelingaroundaz.com/" />
+  <meta property="og:url" content="https://www.travelingaroundaz.com/">
   <meta property="og:image" content="">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Traveling Around AZ">
-  <title>Traveling Around AZ</title>
-  <link rel="icon" type="image/svg+xml" href="assets/images/traveling-around-az-favicon.svg">
-  <link rel="preload" href="css/global.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="css/home.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="/assets/images/main-image.webp" as="image">
-  <link rel="preload" href="/assets/fonts/SpecialElite-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Discover Arizona’s Hidden Gems | Traveling Around AZ">
+  <meta name="twitter:description" content="Traveling Around AZ shares the best destinations, hidden gems, and road trips throughout Arizona. Plan your next adventure today!">
+  <meta name="twitter:image" content="https://www.travelingaroundaz.com/assets/images/">
+
+  <!-- Title -->
+  <title>Traveling Around AZ | Ultimate Arizona Travel Guide</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/traveling-around-az-favicon.svg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.travelingaroundaz.com/">
+
+  <!-- Fonts -->
   <link rel="preload" href="/assets/fonts/Satisfy-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <noscript><link rel="stylesheet" href="css/global.css"></noscript>
-  <noscript><link rel="stylesheet" href="css/home.css"></noscript>
-  <link rel="canonical" href="https://www.travelingaroundaz.com/" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <link rel="preload" href="/assets/fonts/ShadowsIntoLightTwo-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/SpecialElite-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Acme-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
-    body {
-      font-family: var(--font-family);
-      background-color: var(--primary-color);
-      line-height: 1.4;
-    }
+  <!-- CSS -->
+  <link rel="preload" href="css/global.css?v=1.0" as="style">
+  <link rel="preload" href="css/home.css?v=1.0" as="style">
+  <link rel="stylesheet" href="css/global.css?v=1.0">
+  <link rel="stylesheet" href="css/home.css?v=1.0">
 
-    .hero {
-      background-image: url(/assets/images/main-image.webp);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #FFFFFF;
-      position: relative;
-    }
-
-    .navbar {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background-color: transparent;
-    }
-
-    .logo img {
-      height: 125px;
-      width: auto;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 50px;
-    }
-
-    .nav-links li a {
-      text-decoration: none;
-      color: var(--secondary-color);
-      font-size: 2rem;
-      font-family: 'Satisfy', cursive;
-      transition: var(--transition-speed);
-    }
-
-    .hero-content h1 {
-      font-size: 4.8rem;
-      font-family: 'Special Elite', serif;
-      letter-spacing: 4px;
-      display: inline-block;
-      margin-top: 425px;
-    }
-
-    .hero-content p {
-      font-family:Arial, Helvetica, sans-serif;
-      font-size: 1.8rem;
-    }
-
-    .hero-content a {
-      font-family: 'Shadows Into Light Two';
-      font-size: 2rem;
-      letter-spacing: 2.5px;
-      display: inline-block;
-      color: inherit;
-      text-decoration: none;
-      margin: 20px;
-      padding: 10px;
-      border: 3px solid #FFFFFF;
-      border-radius: 8px;
-      background-color: var(--secondary-color);
-    }
-
-    @media (max-width: 1024px) {
-      .logo img {
-        height: 100px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .navbar {
-        padding: 20px;
-      }
-
-      .hero-content h1 {
-        font-size: 3.5rem;
-        letter-spacing: 4px;
-        margin-top: 380px;
-      }
-
-      .hero-content p {
-        font-size: 1.6rem;
-      }
-    }
-
-    @media (max-width: 550px) {
-      .hero-content h1 {
-        font-size: 3rem;
-      }
-
-      .hero-content p {
-        font-size: 1.3rem;
-        padding: 0 20px;
-      }
-    }
-
-    @media (max-width: 435px) {
-      .hero-content p {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
-
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJP35VPE9Z"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-XJP35VPE9Z');
+  </script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Traveling Around AZ",
+    "url": "https://www.travelingaroundaz.com",
+    "image": "https://www.travelingaroundaz.com/assets/images/",
+    "description": "Traveling Around AZ is a travel blog exploring Arizona’s top destinations, hidden gems, scenic routes, and must-see attractions for travelers and locals alike.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Traveling Around AZ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.travelingaroundaz.com/assets/images/Traveling-Around-AZ-Logo.webp"
+      }
+    },
+    "inLanguage": "en-US"
+  }
   </script>
 </head>
 

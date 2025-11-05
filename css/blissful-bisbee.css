@@ -64,6 +64,7 @@
     display: block;
 }
 
+/* Responsive Styling */
 @media (max-width: 768px) {
     .main-blissful-bisbee-header {
         margin-top: 150px;

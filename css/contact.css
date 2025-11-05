@@ -5,7 +5,7 @@
 .main-contact-header {
     margin-top: 180px;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
   
 form {
@@ -13,12 +13,10 @@ form {
     display: flex;
     flex-direction: column;
     padding: 2rem 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
+    margin: 40px auto;
     width: 90%;
     max-width: 600px;
-    border-radius: 30px;
+    border-radius: 10px;
 }
   
 form input, form textarea {
@@ -27,21 +25,22 @@ form input, form textarea {
     padding: 20px;
     outline: none;
     background: #ffffff;
-    font-family: 'Sriracha', cursive;
-    font-size: 16px;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.2rem;
     border-radius: 10px;
 }
   
 .button {
+    font-family: 'Satisfy', cursive;
     background: white;
     color: black;
-    font-size: 16px;
+    font-size: 1.2rem;
     border: none;
-    padding: 15px;
+    padding: 8px 10px;
     width: 200px;
     text-align: center;
     margin: 20px auto 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -51,9 +50,11 @@ form input, form textarea {
     color: white;
 }
 
+/* Responsive Styling */
 @media (max-width: 435px) {
     .main-contact-header {
         margin-top: 150px;
+        padding-bottom: 0;
     }
 
     form {
@@ -63,9 +64,11 @@ form input, form textarea {
 
     form input, form textarea {
         padding: 10px;
+        font-size: 0.9rem;
     }
 
     .button {
         width: 150px;
+        font-size: 0.9rem;
     }
 }

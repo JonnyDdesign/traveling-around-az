@@ -9,6 +9,7 @@
   --primary-color: #F5AF4E;
   --primary-color-dark: #C8873A;
   --secondary-color: #6D0796;
+  --secondary-color-light: #AA5DC7;
   --accent-color-light: #F2E6D4;
   --accent-color-dark: #371E16;
   --font-family: 'Arial', sans-serif;
@@ -291,6 +292,10 @@ h3 {
     transition: all 0.4s ease-in-out;
   }
 
+  .nav-links li a {
+    color: var(--secondary-color-light);
+  }
+
   .nav-links.active {
     opacity: 1;
     visibility: visible;
@@ -329,6 +334,10 @@ h3 {
   .hamburger.active .bar:nth-child(3) {
      transform: translateY(-10px) rotate(-45deg);
      width: 30px;
+  }
+
+  .hamburger.active .bar {
+    background-color: var(--secondary-color-light);
   }
 
   .hero-content h1 {

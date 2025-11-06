@@ -32,14 +32,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px;
 }  
 
 .hidden-hiking-post {
-    width: 70%;
     background: var(--primary-color);
     border-radius: 8px;
-    margin: 10px auto;
+    margin: 0 100px;
 }
 
 .hidden-hiking-post h2 {
@@ -51,8 +49,7 @@
 }
 
 .hidden-hiking-post img {
-    width: 100%;
-    max-width: 700px;
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 10px auto;
@@ -72,7 +69,17 @@
 }
 
 /* Responsive Styling */
+@media (max-width: 1180px) {
+    main h1 {
+        font-size: 3.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+    main h1 {
+        font-size: 3rem;
+    }
+
     .hidden-hiking-post {
       flex: 1 1 100%; /* Stacks posts in one column */
     }
@@ -84,11 +91,7 @@
     }
 
     main h1 {
-        font-size: 3rem;
-    }
-
-    .hidden-hiking-intro img {
-        width: 80%;
+        font-size: 2.5rem;
     }
 
     .hidden-hiking-intro p {

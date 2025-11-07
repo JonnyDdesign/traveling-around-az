@@ -10,6 +10,7 @@
 }
 
 .main-hidden-hiking-trails-header h1 {
+    font-size: 4rem;
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -56,17 +57,23 @@
 
 .hidden-hiking-post h2 {
     text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .hidden-hiking-post p {
     font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
 .hidden-hiking-post img {
     max-width: 90%;
     height: auto;
     display: block;
-    margin: 10px auto;
+    margin: 1.5rem auto;
     border-radius: 8px;
 }
 
@@ -74,58 +81,93 @@
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
+    margin: 2rem 0;
 }
 
 .footer-image img {
     width: 100%;
     height: auto;
     display: block;
+    margin: 0;
 }
 
 /* Responsive Styling */
-@media (max-width: 1180px) {
-    main h1 {
-        font-size: 3.5rem;
-    }
-}
-
 @media (max-width: 1024px) {
-    .hidden-hiking-intro p {
-        font-size: 1.2rem;
-        margin: 0 50px;
-    }
-}
-
-@media (max-width: 768px) {
-    main h1 {
+    .main-hidden-hiking-trails-header h1 {
         font-size: 3rem;
-    }
-
-    .hidden-hiking-post {
-      flex: 1 1 100%; /* Stacks posts in one column */
-    }
-}
-
-@media (max-width: 435px) {
-    .main-hidden-hiking-trails-header {
-        margin-top: 150px;
-    }
-
-    main h1 {
-        font-size: 2.5rem;
     }
 
     .hidden-hiking-intro p {
         font-size: 1.1rem;
-        margin: 0 40px;
+        margin: 1rem 50px 1.5rem 50px;
+    }
+
+    .hiking-container {
+        gap: 1.5rem;
+    }
+
+    .hidden-hiking-post {
+        flex: 1 1 100%;
+        padding: 1.5rem;
     }
 
     .hidden-hiking-post h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hidden-hiking-post p {
         font-size: 1.1rem;
-        padding: 10px;
+    }
+
+    .hidden-hiking-post img {
+        margin: 1.5rem auto 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-hidden-hiking-trails-header {
+        margin-top: 150px;
+    }
+
+    .main-hidden-hiking-trails-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .hidden-hiking-intro p {
+        margin: 1rem 30px;
+        font-size: 1rem;
+    }
+
+    .hidden-hiking-post h2 {
+        font-size: 1.5rem;
+    }
+
+    .hidden-hiking-post p {
+        font-size: 1rem;
+    }
+
+    .hidden-hiking-post img {
+        margin: 1rem auto 0 auto;
+    }
+}
+
+@media (max-width: 435px) {
+    .hidden-hiking-intro p {
+        font-size: 0.9rem;
+        margin: 0 20px;
+    }
+
+    .hidden-hiking-post {
+        padding: 0.5rem;
+    }
+
+    .hidden-hiking-post p {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+
+    .hidden-hiking-post img {
+        margin: 0.5rem auto;
     }
 }

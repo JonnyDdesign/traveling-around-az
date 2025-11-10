@@ -1,78 +1,128 @@
+.navbar {
+    z-index: 2;
+}
+
 .nav-links li a:hover {
     color: #FFFFFF;
 }
 
-.mainAbout {
-    margin-top: 200px;
-}
-
-.mainAbout h1 {
-    text-align: center;
-    font-size: 4rem;
-    padding-bottom: 20px;
-}
-
-.about-us {
+.about-hero {
+    position: relative;
+    background-image: url('/assets/images/sedona-mountain.webp');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding: 10px;
-    position: relative;
+    text-align: center;
 }
 
-.aboutImg {
-    max-width: 40%;
-    height: auto;
-    border: 4px solid #6d0796;
-    border-radius: 2em 1em 5em / 1em 4em;
-}
+/*.about-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25));
+}*/
 
-.about-us p {
-    position: relative;
-    font-size: 1.5rem;
-    text-align: left;
-    line-height: 1.6;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.3);
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 2rem;
+    color: #FFFFFF;
     border-radius: 8px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    max-width: 50%;
 }
 
+.hero-overlay h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay p {
+    font-family: 'Acme', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    letter-spacing: 0.5px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1 1 500px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+     line-height: 1.6;
+}
+
+.about-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-cta {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.about-cta h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-cta p {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: #000000;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* Responsive Styling */
 @media (max-width: 768px) {
-    .mainAbout {
-        margin-top: 150px;
+    .about-hero h1 {
+        font-size: 2.2rem;
     }
 
-    .mainAbout h1 {
-        font-size: 3.5rem;
-    }
-
-    .about-us {
+    .about-content {
         flex-direction: column;
         text-align: center;
-    }
-
-    .about-us p {
-        font-size: 1.3rem;
-        text-align: center;
-        max-width: 80%;
-        text-align: left;
-    }
-  
-    .aboutImg {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 435px) {
-    .mainAbout h1 {
-        font-size: 3rem;
-    }
-
-    .about-us p {
-        font-size: 1rem;
     }
 }

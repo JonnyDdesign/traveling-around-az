@@ -11,22 +11,15 @@
     background-image: url('/assets/images/sedona-mountain.webp');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-/*.about-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25));
-}*/
-
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.4);
     padding: 2rem;
     color: #FFFFFF;
     border-radius: 8px;
@@ -37,11 +30,12 @@
     font-size: 4rem;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
 }
 
 .hero-overlay p {
     font-family: 'Acme', sans-serif;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: 1.6rem;
     letter-spacing: 0.5px;
     max-width: 600px;
     margin: 0 auto;
@@ -49,10 +43,16 @@
 }
 
 .about-content {
+    background-image: url('/assets/images/about-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+
+.about-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 2rem;
     padding: 4rem 2rem;
     max-width: 1200px;
@@ -113,9 +113,23 @@
 
 .cta-button:hover {
     background-color: var(--primary-color-dark);
+    color: #FFFFFF;
 }
 
 /* Responsive Styling */
+@media (max-width: 1024px) {
+    .hero-overlay {
+        padding: 1rem;
+    }
+
+    .hero-overlay h1 {
+        font-size: 3rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.2rem;
+    }
+}
 @media (max-width: 768px) {
     .about-hero h1 {
         font-size: 2.2rem;

@@ -121,7 +121,12 @@
 @media (max-width: 1600px) {
     .about-content {
         background-image: url('/assets/images/about-background-1600.webp');
-        background-position: left center;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about-content {
+        background-image: url('/assets/images/about-background-1440.webp');
     }
 }
 

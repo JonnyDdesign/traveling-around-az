@@ -169,6 +169,7 @@
 
     .about-content {
         background-image: url('/assets/images/about-background-800.webp');
+        background-position: center;
     }
 
     .about-inner {
@@ -191,9 +192,28 @@
         font-size: 0.9rem;
     }
 
+    .about-image {
+        flex: 1;
+    }
+
     .about-image img {
         width: 85%;
         height: auto;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 435px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        background-image: url('/assets/images/about-background-480.webp');
+        background-position: bottom;
     }
 }

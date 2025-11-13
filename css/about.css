@@ -209,11 +209,23 @@
     }
 
     .about-text h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .about-content {
         background-image: url('/assets/images/about-background-480.webp');
         background-position: bottom;
+    }
+
+    .about-inner {
+        padding: 0.5rem 1rem 4.5rem 1rem;
+    }
+
+    .about-cta {
+        padding: 2rem;
+    }
+
+    .about-cta h2 {
+        font-size: 1.5rem;
     }
 }

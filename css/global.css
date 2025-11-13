@@ -368,6 +368,11 @@ h3 {
     font-size: 1.2rem;
   }
 
+  .social-links {
+    gap: 20px;
+    padding: 0.5rem;
+  }
+
   .social-icon {
     width: 35px;
     height: 35px;
